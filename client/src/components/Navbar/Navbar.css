@@ -1,0 +1,110 @@
+.container-fluid {
+    position: static;
+    padding: 0.5rem 0rem 0rem 0rem;
+}
+
+.container__box {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    background-color: transparent;
+
+}
+
+.rounded-pill {
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+}
+
+.rounded-pill:hover {
+    color: var(--color-text);
+    background-color: #1A1A1A;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 10px 20px;
+    transform: translateY(-3px);
+}
+
+.rounded-pill:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.link__logo {
+    text-decoration: none;
+}
+
+
+.navbar__text {
+    font-weight: 500;
+    color: aliceblue;
+}
+
+
+.button__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(#FF6464, #FFAA64);
+    background-position: center;
+    background-size: cover;
+    width: 44px;
+    height: 44px;
+}
+
+.icon__inicio {
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.icon {
+    width: 50px;
+    color: #FFAA64;
+    font-size: 30px;
+    border-radius: 50%;
+    transition: box-shadow 0.3s ease;
+}
+
+.icon:hover {
+    color: #FF6464;
+    box-shadow: 0 0 10px 5px #FF6464;
+}
+
+.display__login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+
+
+    .navbar__text {
+        display: none;
+    }
+
+    .icon {
+        font-size: 20px;
+    }
+
+    .button__icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .icon__inicio {
+        font-size: 20px;
+    }
+
+    .link__logo {
+        width: 20px;
+    }
+
+    .rounded-pill {
+        width: 30px;
+        height: 30px;
+    }
+}
